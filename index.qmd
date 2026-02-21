@@ -18,7 +18,9 @@ I’m passionate about bridging the gap between technical data infrastructure an
 
 Feel free to explore, and don’t hesitate to connect with me on [LinkedIn](https://www.linkedin.com/in/tommy-nelson-7ab50515a/).
 
-## Where I Study
-
 ```{r}
-1 + 1
+#| include: false
+1+1
+```
+--------------
+Last Updated: `r format(Sys.time(), "%A %m %d, %Y at %H:%M%p")`
