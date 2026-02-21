@@ -21,25 +21,4 @@ Feel free to explore, and don’t hesitate to connect with me on [LinkedIn](http
 ## Where I Study
 
 ```{r}
-#| echo: false
-#| message: false
-#| warning: false
-
-# Check for and install leaflet if missing
-if(!require("leaflet")){
-    options(repos = c(CRAN = "https://cloud.r-project.org"))
-    install.packages("leaflet")
-}
-
-library(leaflet)
-
-# Coordinates for Baruch College
-baruch_longitude <- -73.98333
-baruch_latitude  <- 40.74028
-
-# Generate the map
-leaflet() |>
-  addTiles() |>
-  setView(baruch_longitude, baruch_latitude, zoom=17) |>
-  addPopups(baruch_longitude, baruch_latitude, 
-             "I am a Master's student at <b>Baruch College</b>!")
+1 + 1
