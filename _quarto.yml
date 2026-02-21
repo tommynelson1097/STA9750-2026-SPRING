@@ -1,0 +1,20 @@
+---
+title: "STA 9750 Submission Material"
+project:
+  type: website
+  output-dir: docs
+
+website:
+  description: "Course Projects for STA 9750 at Baruch College"
+  site-url: "https://tommynelson1097.github.io/STA9750-2026-SPRING/"
+  navbar:
+    background: primary
+    search: false
+
+format:
+  html:
+    theme: cerulean
+    toc: false
+
+editor:
+  mode: source

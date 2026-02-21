@@ -1,0 +1,45 @@
+---
+title: "Tommy's Data Journey - About Me Site"
+---
+
+# About Me
+
+I’m an **Analytics Engineer** with a background in business intelligence and data engineering, currently pursuing my MS in Business Analytics & Information Systems. I specialize in building **scalable data models for product analytics**, transforming complex telemetry and event data into reliable, well-structured datasets that empower product teams to make data-informed decisions.
+
+My work sits at the intersection of data engineering and analytics—designing clean, performant data models that support experimentation, product insights, and self-service reporting at scale.
+
+I’m passionate about bridging the gap between technical data infrastructure and business strategy—whether that’s architecting telemetry pipelines, optimizing data transformations, or enabling product teams with trustworthy metrics.
+
+## What You’ll Find Here (Future)
+
+- Projects in product analytics and telemetry modeling  
+- Technical write-ups on analytics engineering best practices  
+- Professional background and experience  
+
+Feel free to explore, and don’t hesitate to connect with me on [LinkedIn](https://www.linkedin.com/in/tommy-nelson-7ab50515a/).
+
+## Where I Study
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+
+# Check for and install leaflet if missing
+if(!require("leaflet")){
+    options(repos = c(CRAN = "https://cloud.r-project.org"))
+    install.packages("leaflet")
+}
+
+library(leaflet)
+
+# Coordinates for Baruch College
+baruch_longitude <- -73.98333
+baruch_latitude  <- 40.74028
+
+# Generate the map
+leaflet() |>
+  addTiles() |>
+  setView(baruch_longitude, baruch_latitude, zoom=17) |>
+  addPopups(baruch_longitude, baruch_latitude, 
+             "I am a Master's student at <b>Baruch College</b>!")
