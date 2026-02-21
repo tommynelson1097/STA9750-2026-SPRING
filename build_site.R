@@ -17,3 +17,4 @@ if(length(Sys.glob("mp0*.qmd")) > 0){
 }
 
 if(!any(grepl("rstudio", search()))){q("no")}
+
